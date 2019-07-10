@@ -38,6 +38,9 @@ private:
   std::string toString(const boost::asio::streambuf& ack_buf);
   float ByteToFloat(char* byteArry);
 
+  int chanels_;
+  int data_size_;
+
   std::vector<char> data_frame_;
 
   boost::thread sensor_read_thread_;
